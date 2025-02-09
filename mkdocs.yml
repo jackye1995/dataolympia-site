@@ -1,0 +1,38 @@
+site_name: DataOlympia
+site_url: https://dataolympia.com
+theme:
+  font:
+    text: Roboto
+    code: Roboto Mono
+  name: material
+  logo: logo/logo.png
+  favicon: logo/favicon.png
+  icon:
+    repo: material/github
+  palette:
+    scheme: default
+    primary: white
+    accent: orange
+plugins:
+  - awesome-pages
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - md_in_html
